@@ -79,18 +79,18 @@
 
 
 
-<meta name="description" content="问题概述input标签 type=number 时，在chrome、ff等browser可以对数字进行过滤，但是safari种不支持过滤功能 兼容性解决方案 采取input标签内置方法，对输入值进行限制 12&amp;lt;input type=&amp;quot;text&amp;quot; oninput=&amp;quot;this.value=this.value.replace(/[^0-9.]+/,&amp;apos;&amp;ap">
+<meta name="description" content="问题概述input标签 type=number 时，在chrome、ff等browser可以对数字进行过滤，但是safari种不支持过滤功能">
 <meta name="keywords" content="App,FE">
 <meta property="og:type" content="article">
 <meta property="og:title" content="input number 兼容性">
 <meta property="og:url" content="http://yoursite.com/2018/06/25/FE/input兼容性处理/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="问题概述input标签 type=number 时，在chrome、ff等browser可以对数字进行过滤，但是safari种不支持过滤功能 兼容性解决方案 采取input标签内置方法，对输入值进行限制 12&amp;lt;input type=&amp;quot;text&amp;quot; oninput=&amp;quot;this.value=this.value.replace(/[^0-9.]+/,&amp;apos;&amp;ap">
+<meta property="og:description" content="问题概述input标签 type=number 时，在chrome、ff等browser可以对数字进行过滤，但是safari种不支持过滤功能">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-06-25T14:49:27.044Z">
+<meta property="og:updated_time" content="2018-06-25T15:06:24.886Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="input number 兼容性">
-<meta name="twitter:description" content="问题概述input标签 type=number 时，在chrome、ff等browser可以对数字进行过滤，但是safari种不支持过滤功能 兼容性解决方案 采取input标签内置方法，对输入值进行限制 12&amp;lt;input type=&amp;quot;text&amp;quot; oninput=&amp;quot;this.value=this.value.replace(/[^0-9.]+/,&amp;apos;&amp;ap">
+<meta name="twitter:description" content="问题概述input标签 type=number 时，在chrome、ff等browser可以对数字进行过滤，但是safari种不支持过滤功能">
 
 
 
@@ -311,6 +311,7 @@
 
       
         <h3 id="问题概述"><a href="#问题概述" class="headerlink" title="问题概述"></a>问题概述</h3><p>input标签 type=number 时，在chrome、ff等browser可以对数字进行过滤，但是safari种不支持过滤功能</p>
+<a id="more"></a>
 <h3 id="兼容性解决方案"><a href="#兼容性解决方案" class="headerlink" title="兼容性解决方案"></a>兼容性解决方案</h3><ol>
 <li><p>采取input标签内置方法，对输入值进行限制</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">&lt;input type=&quot;text&quot; oninput=&quot;this.value=this.value.replace(/[^0-9.]+/,&apos;&apos;);&quot;&gt;</span><br></pre></td></tr></table></figure>
