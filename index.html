@@ -80,12 +80,12 @@
 
 
 <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
+<meta property="og:title" content="Aloys Personal Web">
 <meta property="og:url" content="http://yoursite.com/index.html">
-<meta property="og:site_name" content="Hexo">
+<meta property="og:site_name" content="Aloys Personal Web">
 <meta property="og:locale" content="default">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo">
+<meta name="twitter:title" content="Aloys Personal Web">
 
 
 
@@ -121,7 +121,7 @@
 
 
 
-  <title>Hexo</title>
+  <title>Aloys Personal Web</title>
   
 
 
@@ -152,7 +152,7 @@
     <div class="custom-logo-site-title">
       <a href="/"  class="brand" rel="start">
         <span class="logo-line-before"><i></i></span>
-        <span class="site-title">Hexo</span>
+        <span class="site-title">Aloys Personal Web</span>
         <span class="logo-line-after"><i></i></span>
       </a>
     </div>
@@ -239,16 +239,140 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/06/25/FE/input兼容性处理/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/06/28/FE/有关混合开发APP 返回键处理/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="John Doe">
+      <meta itemprop="name" content="Aloys">
       <meta itemprop="description" content="">
       <meta itemprop="image" content="/images/ez-q.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hexo">
+      <meta itemprop="name" content="Aloys Personal Web">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/06/28/FE/有关混合开发APP 返回键处理/" itemprop="url">有关混合开发APP 返回键处理</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-06-28T20:10:00+08:00">
+                2018-06-28
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h3 id="情景分析"><a href="#情景分析" class="headerlink" title="情景分析"></a>情景分析</h3><p>前段时间进行过安卓机物理返回键的处理，但是发现一个问题， cordova提供的导航头上也有返回键，也需要进行事件的监听， 于是重新考虑解决方案 </p>
+<h3 id="框架"><a href="#框架" class="headerlink" title="框架"></a>框架</h3><p>Cordova  Vue</p>
+<h3 id="方案"><a href="#方案" class="headerlink" title="方案"></a>方案</h3><p>由于H5页面采用的是vue框架，于是考虑对vue-router进行拦截，从而阻止默认的history.back<br>应用vue-router中 beforeRouteLeave 钩子函数</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">beforeRouteLeave (to, from, next) &#123;</span><br><span class="line">// 导航离开该组件的对应路由时调用</span><br><span class="line">// 可以访问组件实例 `this`</span><br><span class="line">&#125;</span><br><span class="line">// 此守卫为组件内部守卫，注册位置为组件内部</span><br></pre></td></tr></table></figure>
+<h3 id="示例"><a href="#示例" class="headerlink" title="示例"></a>示例</h3><img src="/img/hybird_return.png" class="[class names]">
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/06/25/FE/input兼容性处理/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Aloys">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/ez-q.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Aloys Personal Web">
     </span>
 
     
@@ -366,13 +490,13 @@
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/06/25/vue/vuex/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="John Doe">
+      <meta itemprop="name" content="Aloys">
       <meta itemprop="description" content="">
       <meta itemprop="image" content="/images/ez-q.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hexo">
+      <meta itemprop="name" content="Aloys Personal Web">
     </span>
 
     
@@ -489,13 +613,13 @@
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/06/24/Book/Book-List-old/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="John Doe">
+      <meta itemprop="name" content="Aloys">
       <meta itemprop="description" content="">
       <meta itemprop="image" content="/images/ez-q.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hexo">
+      <meta itemprop="name" content="Aloys Personal Web">
     </span>
 
     
@@ -614,13 +738,13 @@
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/06/24/Book/Network-novel/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="John Doe">
+      <meta itemprop="name" content="Aloys">
       <meta itemprop="description" content="">
       <meta itemprop="image" content="/images/ez-q.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hexo">
+      <meta itemprop="name" content="Aloys Personal Web">
     </span>
 
     
@@ -738,13 +862,13 @@
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/06/24/Book/bookList/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="John Doe">
+      <meta itemprop="name" content="Aloys">
       <meta itemprop="description" content="">
       <meta itemprop="image" content="/images/ez-q.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hexo">
+      <meta itemprop="name" content="Aloys Personal Web">
     </span>
 
     
@@ -861,13 +985,13 @@
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/06/22/FE/安卓键返回按钮处理/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="John Doe">
+      <meta itemprop="name" content="Aloys">
       <meta itemprop="description" content="">
       <meta itemprop="image" content="/images/ez-q.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hexo">
+      <meta itemprop="name" content="Aloys Personal Web">
     </span>
 
     
@@ -982,140 +1106,16 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/06/28/FE/有关混合开发APP 返回键处理/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="John Doe">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/ez-q.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hexo">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/06/28/FE/有关混合开发APP 返回键处理/" itemprop="url">有关混合开发APP 返回键处理</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-06-28T20:10:00+08:00">
-                2017-06-28
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h3 id="情景分析"><a href="#情景分析" class="headerlink" title="情景分析"></a>情景分析</h3><pre><code>前段时间进行过安卓机物理返回键的处理，但是发现一个问题， cordova提供的导航头上也有返回键，也需要进行事件的监听， 于是重新考虑解决方案 
-</code></pre><h3 id="框架"><a href="#框架" class="headerlink" title="框架"></a>框架</h3><p>Cordova  Vue</p>
-<h3 id="方案"><a href="#方案" class="headerlink" title="方案"></a>方案</h3><p>由于H5页面采用的是vue框架，于是考虑对vue-router进行拦截，从而阻止默认的history.back<br>应用vue-router中 beforeRouteLeave 钩子函数</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">beforeRouteLeave (to, from, next) &#123;</span><br><span class="line">// 导航离开该组件的对应路由时调用</span><br><span class="line">// 可以访问组件实例 `this`</span><br><span class="line">&#125;</span><br><span class="line">// 此守卫为组件内部守卫，注册位置为组件内部</span><br></pre></td></tr></table></figure>
-<h3 id="示例"><a href="#示例" class="headerlink" title="示例"></a>示例</h3><img src="/img/hybird_return.png" class="[class names]">
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/06/13/Node/hexo+Github page 搭建博客/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="John Doe">
+      <meta itemprop="name" content="Aloys">
       <meta itemprop="description" content="">
       <meta itemprop="image" content="/images/ez-q.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hexo">
+      <meta itemprop="name" content="Aloys Personal Web">
     </span>
 
     
@@ -1235,13 +1235,13 @@
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/06/12/Others/题记/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="John Doe">
+      <meta itemprop="name" content="Aloys">
       <meta itemprop="description" content="">
       <meta itemprop="image" content="/images/ez-q.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hexo">
+      <meta itemprop="name" content="Aloys Personal Web">
     </span>
 
     
@@ -1380,9 +1380,9 @@
             
               <img class="site-author-image" itemprop="image"
                 src="/images/ez-q.jpg"
-                alt="John Doe" />
+                alt="Aloys" />
             
-              <p class="site-author-name" itemprop="name">John Doe</p>
+              <p class="site-author-name" itemprop="name">Aloys</p>
               <p class="site-description motion-element" itemprop="description"></p>
           </div>
 

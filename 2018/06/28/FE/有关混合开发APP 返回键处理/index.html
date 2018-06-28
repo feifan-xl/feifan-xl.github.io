@@ -83,12 +83,12 @@
 <meta name="keywords" content="App,FE">
 <meta property="og:type" content="article">
 <meta property="og:title" content="有关混合开发APP 返回键处理">
-<meta property="og:url" content="http://yoursite.com/2017/06/28/FE/有关混合开发APP 返回键处理/index.html">
-<meta property="og:site_name" content="Hexo">
+<meta property="og:url" content="http://yoursite.com/2018/06/28/FE/有关混合开发APP 返回键处理/index.html">
+<meta property="og:site_name" content="Aloys Personal Web">
 <meta property="og:description" content="情景分析前段时间进行过安卓机物理返回键的处理，但是发现一个问题， cordova提供的导航头上也有返回键，也需要进行事件的监听， 于是重新考虑解决方案  框架Cordova  Vue 方案由于H5页面采用的是vue框架，于是考虑对vue-router进行拦截，从而阻止默认的history.back应用vue-router中 beforeRouteLeave 钩子函数 12345beforeRout">
 <meta property="og:locale" content="default">
 <meta property="og:image" content="http://yoursite.com/img/hybird_return.png">
-<meta property="og:updated_time" content="2018-06-28T12:12:20.983Z">
+<meta property="og:updated_time" content="2018-06-28T12:21:23.920Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="有关混合开发APP 返回键处理">
 <meta name="twitter:description" content="情景分析前段时间进行过安卓机物理返回键的处理，但是发现一个问题， cordova提供的导航头上也有返回键，也需要进行事件的监听， 于是重新考虑解决方案  框架Cordova  Vue 方案由于H5页面采用的是vue框架，于是考虑对vue-router进行拦截，从而阻止默认的history.back应用vue-router中 beforeRouteLeave 钩子函数 12345beforeRout">
@@ -122,13 +122,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2017/06/28/FE/有关混合开发APP 返回键处理/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/06/28/FE/有关混合开发APP 返回键处理/"/>
 
 
 
 
 
-  <title>有关混合开发APP 返回键处理 | Hexo</title>
+  <title>有关混合开发APP 返回键处理 | Aloys Personal Web</title>
   
 
 
@@ -158,7 +158,7 @@
     <div class="custom-logo-site-title">
       <a href="/"  class="brand" rel="start">
         <span class="logo-line-before"><i></i></span>
-        <span class="site-title">Hexo</span>
+        <span class="site-title">Aloys Personal Web</span>
         <span class="logo-line-after"><i></i></span>
       </a>
     </div>
@@ -245,16 +245,16 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/06/28/FE/有关混合开发APP 返回键处理/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/06/28/FE/有关混合开发APP 返回键处理/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="John Doe">
+      <meta itemprop="name" content="Aloys">
       <meta itemprop="description" content="">
       <meta itemprop="image" content="/images/ez-q.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hexo">
+      <meta itemprop="name" content="Aloys Personal Web">
     </span>
 
     
@@ -274,8 +274,8 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-06-28T20:10:00+08:00">
-                2017-06-28
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-06-28T20:10:00+08:00">
+                2018-06-28
               </time>
             
 
@@ -312,8 +312,8 @@
       
 
       
-        <h3 id="情景分析"><a href="#情景分析" class="headerlink" title="情景分析"></a>情景分析</h3><pre><code>前段时间进行过安卓机物理返回键的处理，但是发现一个问题， cordova提供的导航头上也有返回键，也需要进行事件的监听， 于是重新考虑解决方案 
-</code></pre><h3 id="框架"><a href="#框架" class="headerlink" title="框架"></a>框架</h3><p>Cordova  Vue</p>
+        <h3 id="情景分析"><a href="#情景分析" class="headerlink" title="情景分析"></a>情景分析</h3><p>前段时间进行过安卓机物理返回键的处理，但是发现一个问题， cordova提供的导航头上也有返回键，也需要进行事件的监听， 于是重新考虑解决方案 </p>
+<h3 id="框架"><a href="#框架" class="headerlink" title="框架"></a>框架</h3><p>Cordova  Vue</p>
 <h3 id="方案"><a href="#方案" class="headerlink" title="方案"></a>方案</h3><p>由于H5页面采用的是vue框架，于是考虑对vue-router进行拦截，从而阻止默认的history.back<br>应用vue-router中 beforeRouteLeave 钩子函数</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">beforeRouteLeave (to, from, next) &#123;</span><br><span class="line">// 导航离开该组件的对应路由时调用</span><br><span class="line">// 可以访问组件实例 `this`</span><br><span class="line">&#125;</span><br><span class="line">// 此守卫为组件内部守卫，注册位置为组件内部</span><br></pre></td></tr></table></figure>
 <h3 id="示例"><a href="#示例" class="headerlink" title="示例"></a>示例</h3><img src="/img/hybird_return.png" class="[class names]">
@@ -349,8 +349,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2017/06/13/Node/hexo+Github page 搭建博客/" rel="next" title="hexo+Github page 搭建博客">
-                <i class="fa fa-chevron-left"></i> hexo+Github page 搭建博客
+              <a href="/2018/06/25/FE/input兼容性处理/" rel="next" title="input number 兼容性">
+                <i class="fa fa-chevron-left"></i> input number 兼容性
               </a>
             
           </div>
@@ -358,10 +358,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2018/06/22/FE/安卓键返回按钮处理/" rel="prev" title="Hybird Android 中返回键处理">
-                Hybird Android 中返回键处理 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -429,9 +425,9 @@
             
               <img class="site-author-image" itemprop="image"
                 src="/images/ez-q.jpg"
-                alt="John Doe" />
+                alt="Aloys" />
             
-              <p class="site-author-name" itemprop="name">John Doe</p>
+              <p class="site-author-name" itemprop="name">Aloys</p>
               <p class="site-description motion-element" itemprop="description"></p>
           </div>
 
